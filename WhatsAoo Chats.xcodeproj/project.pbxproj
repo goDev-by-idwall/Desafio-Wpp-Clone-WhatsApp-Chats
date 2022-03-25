@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		15AA6AA927EE7F01001BD043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA6AA827EE7F01001BD043 /* AppDelegate.swift */; };
 		15AA6AAB27EE7F01001BD043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA6AAA27EE7F01001BD043 /* SceneDelegate.swift */; };
-		15AA6AAD27EE7F01001BD043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA6AAC27EE7F01001BD043 /* ViewController.swift */; };
-		15AA6AB027EE7F01001BD043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AA6AAE27EE7F01001BD043 /* Main.storyboard */; };
+		15AA6AAD27EE7F01001BD043 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA6AAC27EE7F01001BD043 /* ChatsViewController.swift */; };
 		15AA6AB227EE7F03001BD043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AA6AB127EE7F03001BD043 /* Assets.xcassets */; };
 		15AA6AB527EE7F03001BD043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AA6AB327EE7F03001BD043 /* LaunchScreen.storyboard */; };
+		15AA6ABE27EE7FCD001BD043 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA6ABD27EE7FCD001BD043 /* ContactsTableViewCell.swift */; };
+		15AA6AC327EE8AA1001BD043 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA6AC227EE8AA1001BD043 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15AA6AA527EE7F01001BD043 /* WhatsAoo Chats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhatsAoo Chats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AA6AA827EE7F01001BD043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15AA6AAA27EE7F01001BD043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15AA6AAC27EE7F01001BD043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		15AA6AAF27EE7F01001BD043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15AA6AAC27EE7F01001BD043 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		15AA6AB127EE7F03001BD043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15AA6AB427EE7F03001BD043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15AA6AB627EE7F03001BD043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15AA6ABD27EE7FCD001BD043 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		15AA6AC227EE8AA1001BD043 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		15AA6AA727EE7F01001BD043 /* WhatsAoo Chats */ = {
 			isa = PBXGroup;
 			children = (
+				15AA6ABF27EE84CE001BD043 /* Scenes */,
+				15AA6ABC27EE7F98001BD043 /* Cell */,
 				15AA6AA827EE7F01001BD043 /* AppDelegate.swift */,
 				15AA6AAA27EE7F01001BD043 /* SceneDelegate.swift */,
-				15AA6AAC27EE7F01001BD043 /* ViewController.swift */,
-				15AA6AAE27EE7F01001BD043 /* Main.storyboard */,
 				15AA6AB127EE7F03001BD043 /* Assets.xcassets */,
 				15AA6AB327EE7F03001BD043 /* LaunchScreen.storyboard */,
 				15AA6AB627EE7F03001BD043 /* Info.plist */,
 			);
 			path = "WhatsAoo Chats";
+			sourceTree = "<group>";
+		};
+		15AA6ABC27EE7F98001BD043 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15AA6ABD27EE7FCD001BD043 /* ContactsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		15AA6ABF27EE84CE001BD043 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				15AA6AC127EE84E9001BD043 /* New */,
+				15AA6AC027EE84D3001BD043 /* Chats */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		15AA6AC027EE84D3001BD043 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				15AA6AAC27EE7F01001BD043 /* ChatsViewController.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		15AA6AC127EE84E9001BD043 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				15AA6AC227EE8AA1001BD043 /* NewViewController.swift */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +162,6 @@
 			files = (
 				15AA6AB527EE7F03001BD043 /* LaunchScreen.storyboard in Resources */,
 				15AA6AB227EE7F03001BD043 /* Assets.xcassets in Resources */,
-				15AA6AB027EE7F01001BD043 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AA6AAD27EE7F01001BD043 /* ViewController.swift in Sources */,
+				15AA6ABE27EE7FCD001BD043 /* ContactsTableViewCell.swift in Sources */,
+				15AA6AAD27EE7F01001BD043 /* ChatsViewController.swift in Sources */,
+				15AA6AC327EE8AA1001BD043 /* NewViewController.swift in Sources */,
 				15AA6AA927EE7F01001BD043 /* AppDelegate.swift in Sources */,
 				15AA6AAB27EE7F01001BD043 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		15AA6AAE27EE7F01001BD043 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15AA6AAF27EE7F01001BD043 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		15AA6AB327EE7F03001BD043 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +320,6 @@
 				INFOPLIST_FILE = "WhatsAoo Chats/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +331,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +347,6 @@
 				INFOPLIST_FILE = "WhatsAoo Chats/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
